@@ -46,30 +46,3 @@ const App = () => {
 export default App;
 
 
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import { GiphyFetch } from '@giphy/js-fetch-api'
-
-
-// function App() {
-
-//   useEffect(() => {
-//     //alert('hiii');
-//     fetch("")
-//       .then((res) => res.json())
-//       .then((resp) => console.log(resp));
-
-//   }, []);
-//   return <div></div>;
-// }
-
-// export default App;
-
-// github code:
-//import { GiphyFetch } from '@giphy/js-fetch-api'
-
-// const gf = new GiphyFetch('your api key')
-
-// // fetch 10 gifs
-// const { data: gifs } = await gf.trending({ limit: 10 })    
-// **************************************
