@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     //alert('hiii');
     async function getData() {
-      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);  
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`); 
       console.log(res.data.name);  //show data
       setName(res.data.name);  //access name
       setMoves(res.data.moves.length);  //moves in array form so to access the array data we use moves.lenght here.
@@ -28,8 +28,8 @@ const App = () => {
         i have <span style={{ color: "red" }}> {moves} moves</span>
       </h1>
 
-      <select value={num} onChange={(event) => {
-        setNum(event.target.value);
+      <select value={num} onChange={(event) => { 
+        setNum(event.target.value); // select the value from option and update the num.
 
       }}
       >
