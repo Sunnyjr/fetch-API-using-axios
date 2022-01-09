@@ -9,10 +9,10 @@ const App = () => {
   useEffect(() => {
     //alert('hiii');
     async function getData() {
-      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
-      console.log(res.data.name);
-      setName(res.data.name);
-      setMoves(res.data.moves.length);
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);  
+      console.log(res.data.name);  //show data
+      setName(res.data.name);  //access name
+      setMoves(res.data.moves.length);  //moves in array form so to access the array data we use moves.lenght here.
     }
     getData();
   });
